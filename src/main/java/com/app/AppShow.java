@@ -11,4 +11,8 @@ public class AppShow {
     public static Employee getEmployee(String name, Integer age){
         return new Employee(name, age);
     }
+
+    public static String getname(Employee emp){
+        return emp.getName();
+    }
 }

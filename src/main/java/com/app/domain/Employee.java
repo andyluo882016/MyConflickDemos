@@ -24,7 +24,7 @@ public class Employee {//
     public void setAge(Integer age) {
         this.age = age;
     }
-
+    public Employee(){}
     @Override
     public String toString() {
         return "Employee{" +
