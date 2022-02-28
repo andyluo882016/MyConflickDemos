@@ -1,35 +1,30 @@
 package com.app.domain;
 
 public class Employee {//
-     private String name;
-     private Integer age;
 
-    public Employee(String name, Integer age) {
-        this.name = name;
-        this.age = age;
+    private String id;
+    private String name;
+
+    public String getId() {
+        return id;
+
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
+
+    public Employee(String id, String name) {
+        this.id = id;
         this.name = name;
     }
 
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-    }
-    public Employee(){}
     @Override
     public String toString() {
         return "Employee{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' ;
     }
+
 }
